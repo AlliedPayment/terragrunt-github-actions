@@ -181,7 +181,7 @@ function main {
       ;;
     validate-all)
       installTerragrunt
-      terragruntValidate ${*}
+      terragruntValidateAll ${*}
       ;;  
     plan)
       installTerragrunt
