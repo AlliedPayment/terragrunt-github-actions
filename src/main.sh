@@ -153,6 +153,7 @@ function main {
   source ${scriptDir}/terragrunt_fmt.sh
   source ${scriptDir}/terragrunt_init.sh
   source ${scriptDir}/terragrunt_validate.sh
+  source ${scriptDir}/terragrunt_validate_all.sh
   source ${scriptDir}/terragrunt_plan.sh
   source ${scriptDir}/terragrunt_apply.sh
   source ${scriptDir}/terragrunt_output.sh
@@ -178,10 +179,18 @@ function main {
       installTerragrunt
       terragruntValidate ${*}
       ;;
+    validate-all)
+      installTerragrunt
+      terragruntValidate ${*}
+      ;;  
     plan)
       installTerragrunt
       terragruntPlan ${*}
       ;;
+    plan-all)
+      installTerragrunt
+      terragruntPlanAll ${*}
+      ;;  
     apply)
       installTerragrunt
       terragruntApply ${*}
