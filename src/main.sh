@@ -196,6 +196,10 @@ function main {
       installTerragrunt
       terragruntApply ${*}
       ;;
+    apply-all)
+      installTerragrunt
+      terragruntApplyAll ${*}
+      ;;
     output)
       installTerragrunt
       terragruntOutput ${*}
