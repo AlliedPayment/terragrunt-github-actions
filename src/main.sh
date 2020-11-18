@@ -206,6 +206,10 @@ function main {
       installTerragrunt
       terragruntOutput ${*}
       ;;
+    output-all)
+      installTerragrunt
+      terragruntOutputAll ${*}
+      ;;
     import)
       installTerragrunt
       terragruntImport ${*}
