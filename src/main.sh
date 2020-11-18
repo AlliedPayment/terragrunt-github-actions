@@ -159,6 +159,7 @@ function main {
   source ${scriptDir}/terragrunt_apply.sh
   source ${scriptDir}/terragrunt_applyall.sh
   source ${scriptDir}/terragrunt_output.sh
+  source ${scriptDir}/terragrunt_outputall.sh
   source ${scriptDir}/terragrunt_import.sh
   source ${scriptDir}/terragrunt_taint.sh
   source ${scriptDir}/terragrunt_destroy.sh
